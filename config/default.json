@@ -1,7 +1,7 @@
 {
   "blip": {
-     "identifier": "HERE_THE_IDENTIFIER",
-     "key": "HERE_THE_KEY",
+     "identifier": "botsdkjs",
+     "accessKey": "eHVidHdDM3Z6Y1FEdFEyU2ttQmM="
   },
   "server": {
     "port": 8050

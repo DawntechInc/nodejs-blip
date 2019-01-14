@@ -1,5 +1,8 @@
 {
   "main": "index.js",
+  "author": "Levindo Gabriel Taschetto Neto",
+  "description": "BOT using the JS SDK from BLIP",
+  "license": "MIT",
   "dependencies": {
     "balihoo-blip-sdk": "1.8.0",
     "lime-transport-websocket": "2.0.2",
@@ -7,5 +10,8 @@
     "config": "3.0.1",
     "lime-js": "2.5.2",
     "blip-sdk": "6.5.1"
+  },
+  "devDependencies": {
+    "eslint-config-rallycoding": "^3.2.0"
   }
 }
