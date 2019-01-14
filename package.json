@@ -2,6 +2,8 @@
   "main": "index.js",
   "dependencies": {
     "balihoo-blip-sdk": "1.8.0",
-    "lime-transport-websocket": "2.0.2"
+    "lime-transport-websocket": "2.0.2",
+    "express": "~4.0.0",
+    "config": "3.0.1"
   }
 }
