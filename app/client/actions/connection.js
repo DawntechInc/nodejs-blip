@@ -2,13 +2,13 @@
  * @param {BlipSdk.ClientBuilder} client
  * @return {void}
  */
-module.exports.blipConnect = function(client) {
-  client
-  .connect()
-  .then((session) => {
-    console.log('[CONNECTED] -> session: ', session);
-  }).catch((error) => {
-      console.log('[CONNECTION FAILED] -> Error: ', error)
-  });
+module.exports.createSession = function(client) {
+  return client
+         .connect()
+         .then((session) => {
+           console.log('[CONNECTED] -> session: ', session);
+         }).catch((error) => {
+             console.log('[CONNECTION FAILED] -> Error: ', error)
+         });
 }
 
