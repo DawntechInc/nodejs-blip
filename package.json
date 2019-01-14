@@ -4,6 +4,8 @@
     "balihoo-blip-sdk": "1.8.0",
     "lime-transport-websocket": "2.0.2",
     "express": "~4.0.0",
-    "config": "3.0.1"
+    "config": "3.0.1",
+    "lime-js": "2.5.2",
+    "blip-sdk": "6.5.1"
   }
 }
