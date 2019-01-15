@@ -6,8 +6,8 @@ var Notification = require('../models/notification');
 
 /**
  * Function for managing the client.
- * @param {void}
- * @returns {void}
+ * @param  {void}
+ * @return {void}
  */
 module.exports.clientManager = function() {
   Connection.createSession(clientModel).then(() => {

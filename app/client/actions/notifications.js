@@ -1,5 +1,5 @@
 /** Function for receiving notifications from the server.
- *  @param {BlipSdk.ClientBuilder} client.
+ *  @param  {BlipSdk.ClientBuilder} client.
  *  @return {Handler} receiving notification handler for canceling registration.
  */
 module.exports.addNotification = function(client) {
@@ -8,10 +8,11 @@ module.exports.addNotification = function(client) {
   });
 }
 
-/** Function for sending notifications to the server.
- *  @param {Notification} notification.
+/** Function for sending a notification to the server.
+ *  @param  {BlipSdk.ClientBuilder} client
+ *  @param  {Notification} notification.
  *  @return {void}.
  */
-module.exports.sendNotificationMessage = function(notification) {
+module.exports.sendNotification = function(client, notification) {
   client.sendNotification(notification);
 }

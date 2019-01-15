@@ -1,5 +1,5 @@
 /** Function for receiving a message from the server.
- *  @param {BlipSdk.ClientBuilder} client.
+ *  @param  {BlipSdk.ClientBuilder} client.
  *  @return {Handler} receiving message handler for canceling registration.
  */
 module.exports.receiveMessage = function(client) {
@@ -10,8 +10,8 @@ module.exports.receiveMessage = function(client) {
 }
 
 /** Function for receiving a message from the server and filtering the sender.
- *  @param {BlipSdk.ClientBuilder} client,
- *         {String} sender.
+ *  @param  {BlipSdk.ClientBuilder} client.
+ *  @param  {String} sender.
  *  @return {Handler} receiving message handler for canceling registration.
  */
 module.exports.receiveMessageWithFilter = function(client, sender) {
@@ -22,4 +22,13 @@ module.exports.receiveMessageWithFilter = function(client, sender) {
          (message) => {
            console.log('[MESSAGES]: Received message: ', messageReceived, 'from the sender ', sender);
         });
+}
+
+/** Function for sending a message to the server.
+ *  @param  {BlipSdk.ClientBuilder} client.
+ *  @param  {Message} message.
+ *  @return {void}.
+ */
+module.exports.sendMessage = function(client, message) {
+  client.sendMessage(message);
 }

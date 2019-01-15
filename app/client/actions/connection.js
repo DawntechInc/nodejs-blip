@@ -1,5 +1,5 @@
 /** Function for connecting the client to Blip.
- *  @param {BlipSdk.ClientBuilder} client.
+ *  @param  {BlipSdk.ClientBuilder} client.
  *  @return {Handler} creating session handler for canceling registration.
  */
 module.exports.createSession = function(client) {
@@ -13,7 +13,7 @@ module.exports.createSession = function(client) {
 }
 
 /** Function for connecting the client to Blip.
- *  @param {BlipSdk.ClientBuilder} client.
+ *  @param  {BlipSdk.ClientBuilder} client.
  *  @return {Handler} closing session handler for canceling registration.
  */
 module.exports.closeSession = function(client) {
