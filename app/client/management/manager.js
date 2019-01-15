@@ -1,9 +1,13 @@
 var Connection = require('../actions/connection');
-
 var clientModel = require('../models/blipClient')
 
+/**
+ * Function for managing the client.
+ * @param {void}
+ * @returns {void}
+ */
 module.exports.clientManager = function() {
   Connection.createSession(clientModel).then(() => {
-    console.log('Session has been created');
+    console.log('[MANAGER]: Session has been created');
   });
 }

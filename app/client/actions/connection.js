@@ -1,6 +1,6 @@
-/* Function for connecting the client to Blip
- * @param {BlipSdk.ClientBuilder} client
- * @return {void}
+/** Function for connecting the client to Blip
+ *  @param {BlipSdk.ClientBuilder} client
+ *  @return {void}
  */
 module.exports.createSession = function(client) {
   return client
@@ -12,3 +12,16 @@ module.exports.createSession = function(client) {
          });
 }
 
+/** Function for connecting the client to Blip
+ *  @param {BlipSdk.ClientBuilder} client
+ *  @return {void}
+ */
+module.exports.closeSession = function(client) {
+  return client.close()
+         .then(() => {
+           console.log('[DISCONNECTED] -> Session closed');
+         })
+         .catch((error) {
+           console.log('[CLOSING SESSION FAILED] -> Error: ', error);
+         });
+}
