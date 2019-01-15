@@ -8,7 +8,10 @@ module.exports.addNotification = function(client) {
   });
 }
 
-
-// module.exports.sendNotificationMessage = function(client) {
-//   client.sendNotification()
-// }
+/** Function for sending notifications to the server.
+ *  @param {Notification} notification.
+ *  @return {void}.
+ */
+module.exports.sendNotificationMessage = function(notification) {
+  client.sendNotification(notification);
+}
