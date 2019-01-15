@@ -13,14 +13,13 @@ module.exports = class Notification {
   setEvent(event) {
     this.event = event;
   }
-  getId(id) {
+  getId() {
     return this.id;
   }
-  getTo(to) {
+  getTo() {
     return this.to;
   }
-  getEvent(event) {
+  getEvent() {
     return this.event;
   }
 }
-
