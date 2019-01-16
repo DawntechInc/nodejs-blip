@@ -1,23 +1,17 @@
 var Lime = require('lime-js'); // Events of messages and notifications
-
 var Connection = require('../actions/connection');
-var clientModel = require('../models/blipClient');
+var Messages = require('../actions/messages');
+var Notifications = require('../actions/notifications');
 var Notification = require('../models/notification');
+var Message = require('../models/message');
 
 /**
  * Function for managing the client.
- * @param  {void}
- * @return {void}
+ * @param  {void}.
+ * @return {void}.
  */
-module.exports.clientManager = function() {
+module.exports.clientManager = function(clientModel) {
   Connection.createSession(clientModel).then(() => {
-    console.log('[MANAGER]: Session has been created');
-  }).then(() => {
-    Connection.closeSession(clientModel).then(() => {
-      var notificationTest = new Notification("ef16284d-09b2-4d91-8220-74008f3a5788", "553199990000@0mn.io", Lime.NotificationEvent.RECEIVED);
-      console.log("notificationTest: ", notificationTest);
-      console.log('[MANAGER]: Session has been closed');
-
-    })
+    console.log('[MANAGER] Session has been created');
   });
 }

@@ -6,9 +6,9 @@ module.exports.createSession = function(client) {
   return client
          .connect()
          .then((session) => {
-           console.log('[CLIENT] -> Session created: ', session);
+           console.log('[CLIENT] Session created: ', session);
          }).catch((error) => {
-             console.log('[CLIENT] -> Error on creating session: ', error)
+             console.log('[CLIENT] Error on creating session: ', error)
          });
 }
 
@@ -19,9 +19,9 @@ module.exports.createSession = function(client) {
 module.exports.closeSession = function(client) {
   return client.close()
          .then(() => {
-           console.log('[CLIENT] -> Session closed');
+           console.log('[CLIENT] Session closed');
          })
          .catch((error) => {
-           console.log('[CLIENT]: Error on closing session: ', error);
+           console.log('[CLIENT] Error on closing session: ', error);
          });
 }

@@ -4,7 +4,7 @@
  */
 module.exports.addNotification = function(client) {
   return client.addNotificationReceiver("received", (notification) => {
-    console.log('[NOTIFICATION]: Notification received: ', notification);
+    console.log('[NOTIFICATIONS] Notification received: ', notification);
   });
 }
 
@@ -15,4 +15,5 @@ module.exports.addNotification = function(client) {
  */
 module.exports.sendNotification = function(client, notification) {
   client.sendNotification(notification);
+   console.log('[NOTIFICATIONS] Notification sent: ', notification);
 }
