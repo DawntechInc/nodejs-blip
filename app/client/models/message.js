@@ -1,8 +1,9 @@
 module.exports = class Message {
-  constructor(type, content, to) {
+  constructor(type, content, to, id) {
     this.type = type;
     this.content = content;
     this.to = to;
+    this.id = id; // For notifications
   }
   setType(type) {
     this.type = type;
@@ -13,6 +14,9 @@ module.exports = class Message {
   setTo(to) {
     this.to = to;
   }
+  setId(id) {
+    this.id = id;
+  }
   getType() {
     return this.type;
   }
@@ -21,5 +25,8 @@ module.exports = class Message {
   }
   getTo() {
     return this.to;
+  }
+  getId() {
+    return this.id;
   }
 }
