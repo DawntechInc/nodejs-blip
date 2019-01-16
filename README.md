@@ -2,7 +2,7 @@
 
 Bot for the Blip platform utilizing its NodeJS software development kit.
 
-_Author:_Levindo Gabriel Taschetto Neto.
+**Author:** Levindo Gabriel Taschetto Neto.
 
 ## NodeJS Environment
 ```
