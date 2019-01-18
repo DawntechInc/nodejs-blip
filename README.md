@@ -24,5 +24,5 @@ For this to work you ought to have Docker installed in your machine.
 To run the service under the project defined on the [configuration file](config/default.json), please run the following command within the root of the project:
 ```
 $ docker build -t nodejs-blip .
-$ docker run .
+$ docker run -p 8051:8050 nodejs-blip
 ```
