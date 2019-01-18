@@ -18,16 +18,11 @@ node v9.7.1 linux/amd64
 *  Activate the option *Connect using SDK*.
 *  Place the credentials *Identifier* and *Access key* into their reserved values in the [configuration file](config/default.json).
 
-## How to Install Dependencies
+## How to Install Dependencies and Start the Service via Docker
 
-In order to obtain the needed dependencies under [package.json](package.json), please run the following command within the root of the project:
-```
-$ npm install
-```
-
-## How to Start
-
+For this to work you ought to have Docker installed in your machine.
 To run the service under the project defined on the [configuration file](config/default.json), please run the following command within the root of the project:
 ```
-$ npm start
+$ docker build -t nodejs-blip .
+$ docker run .
 ```
